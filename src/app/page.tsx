@@ -41,9 +41,3 @@ export default function Home() {
     </Wrapper>
   );
 }
-
-export const getServerSideProps = async () => {
-  return {
-    props: {},
-  };
-};
