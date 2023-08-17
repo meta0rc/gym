@@ -2,12 +2,16 @@
 
 import styled from "styled-components";
 
+const banner = "/assets/images/home/background1.jpg";
+const banner2 = "/assets/images/home/background2.jpg";
+const banner3 = "/assets/images/home/background3.jpg";
+const banner4 = "/assets/images/home/background4.jpg";
+const banner5 = "/assets/images/home/background5.jpg";
+
 export const Container = styled.div<{ background?: string }>`
   height: 100vh;
   background-image: url(${(props) =>
-    props.background
-      ? props.background
-      : "/assets/images/home/background-home.jpg"});
+    props.background ? props.background : banner5});
   background-size: cover;
 `;
 

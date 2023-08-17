@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Contact, Copy, Menu, Wrapper } from "./style";
 import data from "@/data.json";
+import { Whatsapp } from "../whats";
 
 export const Footer = () => {
   return (
@@ -33,6 +34,7 @@ export const Footer = () => {
         Full-life acessoria esportiva - {new Date().getFullYear()} - Copyright -
         Todos os direitos reservados. - (11) 9405511067
       </Copy>
+      <Whatsapp />
     </footer>
   );
 };

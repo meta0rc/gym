@@ -14,25 +14,17 @@ export default function Home() {
   return (
     <Wrapper>
       <Container>
-        <Backdrop aria-readonly />
+        <Backdrop aria-readonly variant="medium" />
         <Header />
         <Content>
-          <h1>
-            Bem vindo a <b>Full-life</b> uma acessoria perfeita para o seu
-            condominio.
-          </h1>
+          <h1>Bem vindo a acessoria esportiva Full-life</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam
-            soluta quam sequi saepe labore commodi rem, laboriosam sunt, incidud
+            Uma empresa repleta de soluções esportivas para o seu condominio
           </p>
-          <Button>Lorem ipsum dolor sit amet</Button>
+          {/* <Button>Lorem ipsum dolor sit amet</Button> */}
         </Content>
       </Container>
       <Middle>
-        <h3>
-          A fulllife conta com uma ampla variedade de serviços para você tornar
-          a sua vida melhor e agregar valor ao seu condominio.
-        </h3>
         <p>
           Veja abaixo alguns do serviços que prestamos com a nossa acessoria
           esportiva.
