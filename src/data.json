@@ -1,0 +1,44 @@
+{
+    "pages": [
+        {
+            "description": "A musculação é uma modalidade amplamente reconhecida pelos benefícios que traz para a saúde física e mental. Praticar musculação no conforto do seu condomínio proporciona a comodidade de cuidar da sua saúde e forma física sem precisar se deslocar a outras academias. O fortalecimento muscular, melhora da postura e aumento da densidade óssea são apenas alguns dos benefícios que você pode desfrutar ao praticar musculação no seu condomínio, com a garantia de profissionais qualificados para orientá-lo.",
+            "name": "musculacao",
+            "label": "Musculação"
+        },
+        {
+            "description": "O treinamento funcional é uma modalidade que visa melhorar as capacidades físicas de forma global, tendo como foco o fortalecimento muscular, a melhora da coordenação motora e o aumento da resistência cardiovascular. Praticar funcional dentro do seu condomínio permite que você se beneficie de um programa de exercícios variados e desafiadores, conduzidos por profissionais competentes. A combinação de movimentos funcionais com o conforto da sua casa proporciona uma experiência de treinamento completa e eficaz.",
+            "name": "funcional",
+            "label": "Treinamento funcional"
+        },
+        {
+            "description": "A natação é uma das atividades físicas mais completas e benéficas para a saúde. Praticar natação no ambiente tranquilo e seguro do seu condomínio, com a orientação de profissionais qualificados, torna-se um convite irresistível para cuidar da sua forma física e bem-estar. Além do fortalecimento muscular, a natação melhora a capacidade cardiovascular, aumenta a flexibilidade e ajuda a desenvolver a coordenação motora. Aproveite da comodidade de ter uma piscina no seu condomínio e desfrute dos benefícios que a natação proporciona para a sua saúde.",
+            "name": "natacao",
+            "label": "Natação"
+        },
+        {
+            "description": "A hidroginástica é uma atividade voltada para o fortalecimento muscular, melhora da aptidão cardiovascular e aumento da flexibilidade, realizada na piscina do seu condomínio. Praticar hidroginástica proporciona uma sensação de bem-estar, além de auxiliar no relaxamento muscular e alívio do estresse. Com a orientação especializada de profissionais qualificados, você pode desfrutar dos benefícios dessa modalidade no conforto do seu condomínio, em um ambiente agradável e seguro.",
+            "name": "hidro",
+            "label": "Hidroginástica"
+        },
+        {
+            "description": "Proporcionar às crianças a oportunidade de praticar ballet no seu condomínio é um presente para o desenvolvimento físico e artístico delas. Com aulas ministradas por profissionais capacitados e experientes, o ballet no ambiente familiar do condomínio oferece um espaço seguro para os pequenos bailarinos desenvolverem a coordenação motora, a expressão corporal e a disciplina. Além de beneficiar o condicionamento físico, o ballet estimula a criatividade e o trabalho em equipe, permitindo que as crianças experimentem a magia da dança no seu próprio espaço.",
+            "name": "ballet",
+            "label": "Ballet infantil"
+        },
+        {
+            "description": "Para os pequenos atletas, oferecemos aulas de futebol dentro do seu condomínio. Estimular a prática esportiva desde cedo é fundamental para o desenvolvimento físico e mental das crianças. Com aulas divertidas e orientação de profissionais competentes, o futebol no seu condomínio proporciona um ambiente seguro e estimulante para que seus filhos possam aprender e se divertir. Além dos benefícios físicos, como melhora da coordenação motora e desenvolvimento da habilidade esportiva, o futebol no condomínio estimula a sociabilidade e promove a formação de amizades entre as crianças.",
+            "name": "futebol",
+            "label": "Futebol infantil"
+        },
+        {
+            "description": "O Pilates é uma modalidade que busca o equilíbrio entre o corpo e a mente através de exercícios controlados e de baixo impacto. Praticar Pilates no seu condomínio permite que você cuide da sua saúde e bem-estar sem precisar enfrentar deslocamentos. Com profissionais qualificados e equipamentos adequados, você poderá desfrutar dos benefícios do Pilates, como o fortalecimento muscular, melhora da postura e aumento da flexibilidade, tudo isso em um ambiente confortável e familiar.",
+            "name": "pilates",
+            "label": "Pilates"
+        },
+        {
+            "description": "A zumba é uma modalidade de dança que combina ritmos latinos com atividade aeróbica, proporcionando uma forma divertida de exercitar-se. Praticar zumba no ambiente do seu condomínio é uma excelente opção para cuidar da sua saúde enquanto se diverte e socializa com outros moradores. Com a orientação de profissionais especializados, você poderá desfrutar de inúmeros benefícios, como o aumento do condicionamento cardiovascular, melhora da coordenação motora e queima de calorias, tudo isso em um ambiente descontraído e amigável. Aproveite a atmosfera alegre do seu condomínio para dançar e manter-se ativo!",
+            "name": "zumba",
+            "label": "Zumba"
+        }
+    ]
+}
