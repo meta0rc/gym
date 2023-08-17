@@ -5,6 +5,8 @@ import { Presentation } from "@/components/presentation";
 import { Backdrop } from "@/components/presentation/style";
 import { Metadata } from "next";
 import { Footer } from "@/components/footer";
+import { Markup } from "@/components/markup";
+import { ContentSlider } from "@/components/content-animated";
 
 export const metadata: Metadata = {
   title: "Full-life - Acessoria Esportiva",
@@ -17,11 +19,17 @@ export default function Home() {
         <Backdrop aria-readonly variant="medium" />
         <Header />
         <Content>
-          <h1>Bem vindo a acessoria esportiva Full-life</h1>
-          <p>
-            Uma empresa repleta de soluções esportivas para o seu condominio
-          </p>
-          {/* <Button>Lorem ipsum dolor sit amet</Button> */}
+          <Markup />
+          <Markup flow="bottom" />
+          <h1>Bem vindo a Full-life</h1>
+          <ContentSlider>
+            <p>
+              Uma empresa que presta acessoria completa para o seu condominio
+            </p>
+          </ContentSlider>
+          <ContentSlider>
+            <Button>Saiba mais</Button>
+          </ContentSlider>
         </Content>
       </Container>
       <Middle>

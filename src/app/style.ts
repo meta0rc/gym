@@ -13,6 +13,9 @@ export const Container = styled.div<{ background?: string }>`
   background-image: url(${(props) =>
     props.background ? props.background : banner5});
   background-size: cover;
+  @media (max-width: 768px) {
+    background-position-x: -100px;
+  }
 `;
 
 export const Wrapper = styled.div``;
@@ -37,7 +40,7 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 `;
