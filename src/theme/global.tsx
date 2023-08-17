@@ -10,11 +10,20 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         box-sizing: border-box;
     }
+
     h1 {
         font-size: 4rem;
         font-weight: bold;
     }
     h2 { 
         font-size: 3rem;
+    }
+    @media(max-width: 1284px) {
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
     }
 `;

@@ -24,8 +24,17 @@ export const Content = styled.div`
   height: 100%;
   padding: 0 10%;
   width: 70%;
+  b {
+    color: ${(props) => props.theme.palette.green};
+  }
   h1 {
     font-size: 4em;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    h1 {
+      font-size: 2rem;
+    }
   }
 `;
 

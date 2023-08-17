@@ -1,5 +1,6 @@
 "use client";
 
+import { Footer } from "@/components/footer";
 import { GlobalStyles } from "@/theme/global";
 import { theme } from "@/theme/theme";
 import { PropsWithChildren } from "react";

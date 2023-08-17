@@ -1,10 +1,10 @@
 import { Header } from "@/components/header";
 import { Container, Content, Middle, Wrapper } from "./style";
 import { Button } from "@/components/button";
-import { MotivationCard } from "@/components/cards/motivation-card";
 import { Presentation } from "@/components/presentation";
 import { Backdrop } from "@/components/presentation/style";
 import { Metadata } from "next";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Full-life - Acessoria Esportiva",
@@ -18,7 +18,8 @@ export default function Home() {
         <Header />
         <Content>
           <h1>
-            Bem vindo a <strong>Full Life</strong> uma acessoria de respeito
+            Bem vindo a <b>Full-life</b> uma acessoria perfeita para o seu
+            condominio.
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam
@@ -38,6 +39,7 @@ export default function Home() {
         </p>
       </Middle>
       <Presentation />
+      <Footer />
     </Wrapper>
   );
 }

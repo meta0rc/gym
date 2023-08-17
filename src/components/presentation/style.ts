@@ -2,7 +2,19 @@
 
 import { styled } from "styled-components";
 
-export const Main = styled.main`
+export const ContentImage = styled.div`
+  width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+  }
+`;
+
+export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
@@ -16,21 +28,11 @@ export const Wrapper = styled.section`
   a {
     color: #fff;
   }
-`;
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 80%;
-  padding: 0 10%;
-  h2,
-  p {
-    opcity: 0.5;
-  }
-  p {
-    line-height: 2;
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 `;
+
 const BACKDROP_COLORS = {
   low: "#070c15b3",
   medium: "#070c15d1",
@@ -69,17 +71,5 @@ export const Backdrop = styled.div<{
   h2, p {
     opacity: 0.5;
     padding: 0 20px;
-  }
-`;
-
-export const ContentImage = styled.div`
-  width: 100%;
-  position: relative;
-
-  img {
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-    object-fit: cover;
   }
 `;

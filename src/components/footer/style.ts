@@ -8,7 +8,11 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: end;
-  color: #ccc;
+  color: #fff;
+  gap: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -52,7 +56,7 @@ export const Contact = styled.div`
   flex-direction: column;
   margin-top: 20px;
   gap: 10px;
-`
+`;
 
 export const Menu = styled.ul`
   display: flex;
@@ -61,7 +65,7 @@ export const Menu = styled.ul`
   li {
     font-weight: bold;
     a {
-        color: ${props => props.theme.palette.green};
+      color: ${(props) => props.theme.palette.green};
     }
   }
-`
+`;

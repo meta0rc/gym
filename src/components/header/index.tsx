@@ -1,5 +1,7 @@
 import { Logo } from "../logo";
+import { Menu } from "./menu-list";
 import { MenuItem, MenuList, Nav, Wrapper } from "./style";
+import { BiLogoTelegram, BiSolidHome, BiSolidInfoCircle } from "react-icons/bi";
 
 export const Header = () => {
   return (
@@ -7,11 +9,7 @@ export const Header = () => {
       <Wrapper>
         <Logo />
         <Nav>
-          <MenuList>
-            <MenuItem>Inicio</MenuItem>
-            <MenuItem>Sobre a Full-life</MenuItem>
-            <MenuItem>Contato</MenuItem>
-          </MenuList>
+          <Menu />
         </Nav>
       </Wrapper>
     </header>
