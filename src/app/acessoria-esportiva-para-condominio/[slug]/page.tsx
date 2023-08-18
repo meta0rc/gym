@@ -40,7 +40,7 @@ const PageService: NextPage<Props> = ({ params }) => {
           <WrapperContent>
             <div>
               <h1>
-                Procurando por <b>{category.label}?</b>
+                <b>{category.label}</b>
               </h1>
               <Paragraph>
                 Nossa acessoria pode fornecer soluções especificas que você

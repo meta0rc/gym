@@ -18,6 +18,14 @@ export const Container = styled.div<{ background?: string }>`
   }
 `;
 
+export const Slider = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+  left: -30%;
+`;
 export const Wrapper = styled.div``;
 
 export const Content = styled.div`
@@ -37,10 +45,18 @@ export const Content = styled.div`
   h1 {
     font-size: 4em;
   }
+  .title {
+    font-size: 4rem;
+    color: ${(props) => props.theme.palette.green};
+  }
   @media (max-width: 768px) {
     width: 100%;
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
+    }
+    .title {
+      font-size: 4rem;
+      color: ${(props) => props.theme.palette.green};
     }
   }
 `;
@@ -50,10 +66,6 @@ export const Middle = styled.div`
   background: #000;
   text-align: center;
   color: #fff;
-  h3,
-  p {
-    opacity: 0.7;
-  }
   p {
     margin-top: 1%;
   }

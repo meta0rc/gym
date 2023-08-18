@@ -50,6 +50,7 @@ export const Backdrop = styled.div<{
   align-items: center;
   gap: 10px;
   position: absolute;
+  height: 100vh;
   top: 0;
   left: 0;
   bottom: 0;

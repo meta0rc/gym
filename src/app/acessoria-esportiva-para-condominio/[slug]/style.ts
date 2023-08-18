@@ -22,7 +22,8 @@ export const Main = styled.div`
 
 export const Paragraph = styled.p`
   line-height: 1.5;
-  border-bottom: 4px solid ${(props) => props.theme.palette.green};
+  padding-bottom: 10px;
+  border-bottom: 2px solid ${(props) => props.theme.palette.green};
 `;
 
 export const WrapperContent = styled(Content)`
