@@ -43,7 +43,11 @@ export const Menu = () => {
       </MenuItem>
       <MenuItem aria-checked={path === "/contato"}>
         <Link
-          target={window.innerWidth > 768 ? "_blank" : "_self"}
+          target={
+            window && window.innerWidth && window.innerWidth > 768
+              ? "_blank"
+              : "_self"
+          }
           href="https://api.whatsapp.com/send/?phone=5511987613063&text=Ol%C3%A1+vim+pelo+site+e+gostaria+de+saber+mais+sobre+os+servi%C3%A7os&type=phone_number&app_absent=0"
         >
           <BiLogoWhatsapp />
