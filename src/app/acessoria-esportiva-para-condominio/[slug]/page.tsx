@@ -1,5 +1,4 @@
-import { Container, Content, Middle, Wrapper } from "@/app/style";
-import { Button } from "@/components/button";
+import { Container, Wrapper } from "@/app/style";
 import { Header } from "@/components/header";
 import { Backdrop } from "@/components/presentation/style";
 import data from "@/data.json";
@@ -7,16 +6,13 @@ import { NextPage } from "next";
 import {
   ContentDescription,
   ContentImage,
-  Main,
   Mark,
   Paragraph,
   WrapperContent,
-  WrapperForm,
   WrapperMain,
 } from "./style";
-import { PresentationCategory } from "@/components/presentation-category";
 import { Footer } from "@/components/footer";
-import { FaWhatsapp } from "react-icons/fa";
+import { Loader } from "@/components/loader";
 
 type Props = {
   params: {
@@ -29,10 +25,11 @@ const PageService: NextPage<Props> = ({ params }) => {
   const image1 = `/assets/images/pages/${params.slug}/image1.jpg`;
   const image = `/assets/images/pages/${params.slug}/image2.jpg`;
 
-  if (!category) return "carregando...";
+  if (!category) return "Erro ao buscar serviço...";
 
   return (
     <Wrapper>
+      <Loader />
       <Container background={image}>
         <Backdrop aria-readonly />
         <Header />

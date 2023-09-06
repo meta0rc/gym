@@ -5,7 +5,14 @@ import { styled } from "styled-components";
 export const ContentImage = styled.div`
   width: 100%;
   position: relative;
-
+  height: 400px;
+  & > div {
+    display: flex;
+    height: 100%;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
   img {
     width: 100%;
     height: 100%;
@@ -19,7 +26,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
 `;
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   width: 25%;
   text-align: center;
   display: flex;
@@ -28,7 +35,13 @@ export const Wrapper = styled.section`
   a {
     color: #fff;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1000px) {
+    width: 33.33%;
+  }
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;

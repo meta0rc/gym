@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Backdrop, ContentImage, Container, Wrapper } from "./style";
 import data from "@/data.json";
+import { Loader } from "../loader";
 
 export const Presentation = () => {
   return (
@@ -8,22 +9,21 @@ export const Presentation = () => {
       <Container>
         {data.pages.map((page) => (
           <Wrapper key={page.name}>
-            <ContentImage>
-              <Backdrop>
-                <h2>
-                  <Link
-                    href={`/acessoria-esportiva-para-condominio/[slug]`}
-                    as={`/acessoria-esportiva-para-condominio/${page.name}`}
-                  >
-                    {page.label}
-                  </Link>
-                </h2>
-              </Backdrop>
-              <img src={`/assets/images/pages/${page.name}/image1.jpg`} />
-            </ContentImage>
+            <Link
+              href={`/acessoria-esportiva-para-condominio/[slug]`}
+              as={`/acessoria-esportiva-para-condominio/${page.name}`}
+            >
+              <ContentImage>
+                <Backdrop>
+                  <h2>{page.label}</h2>
+                </Backdrop>
+                <img src={`/assets/images/pages/${page.name}/image1.jpg`} />
+              </ContentImage>
+            </Link>
           </Wrapper>
         ))}
       </Container>
+      <Loader />
     </main>
   );
 };

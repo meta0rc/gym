@@ -1,6 +1,11 @@
 "use client";
 
-import { BiSolidHome, BiSolidInfoCircle, BiLogoTelegram } from "react-icons/bi";
+import {
+  BiSolidHome,
+  BiSolidInfoCircle,
+  BiLogoTelegram,
+  BiLogoWhatsapp,
+} from "react-icons/bi";
 import { MdClose, MdMenu } from "react-icons/md";
 import { MenuList, MenuItem, Close } from "./style";
 import { usePathname } from "next/navigation";
@@ -30,15 +35,18 @@ export const Menu = () => {
           Inicio
         </Link>
       </MenuItem>
-      <MenuItem aria-checked={path === "/sobre"}>
-        <Link href="/sobre">
+      <MenuItem aria-checked={path === "/trabalhe-conosco"}>
+        <Link href="/trabalhe-conosco">
           <BiSolidInfoCircle />
-          Sobre a Full-life
+          Trablhe conosco
         </Link>
       </MenuItem>
       <MenuItem aria-checked={path === "/contato"}>
-        <Link href="/contato">
-          <BiLogoTelegram />
+        <Link
+          target={window.innerWidth > 768 ? "_blank" : "_self"}
+          href="https://api.whatsapp.com/send/?phone=5511987613063&text=Ol%C3%A1+vim+pelo+site+e+gostaria+de+saber+mais+sobre+os+servi%C3%A7os&type=phone_number&app_absent=0"
+        >
+          <BiLogoWhatsapp />
           Contato
         </Link>
       </MenuItem>
