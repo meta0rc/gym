@@ -66,13 +66,72 @@ export const WrapperContent = styled(Content)`
   }
 `;
 
-export const WrapperForm = styled(WrapperContent)`
-  width: 40%;
-  height: max-content:
-  div {
-    height: 100%;
-    button {
-      font-size: 1rem;
+export const WrapperForm = styled.div`
+  color: #fff;
+  display: flex;
+  width: 100%;
+  background: #0f1623;
+  padding: 5% 7%;
+  gap: 10rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    gap: 5rem;
+  }
+`;
+
+export const WrapperFormInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 0.5;
+  b {
+    color: ${(props) => props.theme.palette.green};
+  }
+  h2 {
+    font-size: 2rem;
+  }
+`;
+
+export const Info = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  svg {
+    color: ${(props) => props.theme.palette.green};
+  }
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  padding: 3rem;
+  box-sizing: border-box;
+  flex: 1;
+  h2 {
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  button {
+    height: 40px;
+    font-size: 1rem;
+    background: #67a55c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s;
+    &:hover {
+      background: #0f1623;
     }
   }
 `;
@@ -86,6 +145,35 @@ export const Mark = styled.div`
 `;
 
 export const ContentImage = styled.div``;
+
+export const WrapperInput = styled.div`
+  position: relative;
+  display: flex;
+  input {
+    height: 45px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px 30px;
+    font-size: 1rem;
+    color: #000;
+  }
+
+  textarea {
+    padding-top: 10px;
+    resize: none;
+    min-height: 100px;
+  }
+  svg {
+    position: absolute;
+    color: #333;
+    top: 15px;
+    margin-left: 10px;
+  }
+`;
 
 export const ContentDescription = styled.div<Description>`
   position: relative;

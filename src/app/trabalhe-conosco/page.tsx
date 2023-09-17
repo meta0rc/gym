@@ -1,22 +1,38 @@
 import { Container, Wrapper } from "@/app/style";
 import { Header } from "@/components/header";
 import { Backdrop } from "@/components/presentation/style";
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
+import { BsEnvelopeFill, BsWhatsapp } from "react-icons/bs";
+import { HiLocationMarker } from "react-icons/hi";
 import {
   ContentDescription,
   ContentImage,
+  Form,
+  Info,
   Mark,
   Paragraph,
   WrapperContent,
+  WrapperForm,
+  WrapperFormInfo,
+  WrapperInput,
   WrapperMain,
 } from "./style";
 import { Footer } from "@/components/footer";
 import { Loader } from "@/components/loader";
+import { BiChat, BiPhone, BiUser } from "react-icons/bi";
 
 type Props = {
   params: {
     slug: string;
   };
+};
+
+export const metadata: Metadata = {
+  title: "Full life - Trabalhe Conosco",
+  description: `Nossa assessoria esportiva está à procura de profissionais
+  talentosos e dedicados para se juntarem à nossa equipe e
+  trabalharem em condomínios, proporcionando um serviço de
+  excelência aos nossos clientes.`,
 };
 
 const PageWorkus: NextPage<Props> = ({ params }) => {
@@ -88,6 +104,43 @@ const PageWorkus: NextPage<Props> = ({ params }) => {
               <img src="/assets/images/pages/work-with-us/trabalhe-conosco-acessoria-para-condominio.jpg" />
             </ContentImage>
           </ContentDescription>
+        </section>
+        <section>
+          <WrapperForm>
+            <WrapperFormInfo>
+              <h2>
+                Faça parte do nosso time de <b>acessoria esportiva</b>
+              </h2>
+              <Info>
+                <BsEnvelopeFill />
+                contato@acessoriaflife.com.br
+              </Info>
+              <Info>
+                <BsWhatsapp />
+                (11) 98761-3063
+              </Info>
+              <Info>
+                <HiLocationMarker />
+                São Paulo - SP
+              </Info>
+            </WrapperFormInfo>
+            <Form>
+              <h2>Entre em contato conosco</h2>
+              <WrapperInput>
+                <input placeholder="Seu nome" />
+                <BiUser />
+              </WrapperInput>
+              <WrapperInput>
+                <input placeholder="Telefone" />
+                <BiPhone />
+              </WrapperInput>
+              <WrapperInput>
+                <textarea placeholder="Deixe sua mensagem" />
+                <BiChat />
+              </WrapperInput>
+              <button>Enviar</button>
+            </Form>
+          </WrapperForm>
         </section>
       </main>
       <Footer />

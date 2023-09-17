@@ -2,7 +2,7 @@ import { Container, Wrapper } from "@/app/style";
 import { Header } from "@/components/header";
 import { Backdrop } from "@/components/presentation/style";
 import data from "@/data.json";
-import { NextPage } from "next";
+import { Metadata, NextPage, ResolvingMetadata } from "next";
 import {
   ContentDescription,
   ContentImage,
@@ -19,6 +19,15 @@ type Props = {
     slug: string;
   };
 };
+
+export function generateMetadata({ params }: Props): Metadata {
+  const category = data.pages.find((page) => page.name === params.slug);
+
+  return {
+    title: `Acessoria esportiva para condominios - ${category?.label}`,
+    description: category?.description,
+  };
+}
 
 const PageService: NextPage<Props> = ({ params }) => {
   const category = data.pages.find((page) => page.name === params.slug);
